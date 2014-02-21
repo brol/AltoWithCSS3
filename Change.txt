@@ -1,0 +1,2 @@
+v1.0 - 21/02/2014 Pierre Van Glabeke :
+Reprise du thème altowithjQuery et passage à CSS3 pour les arrondis.

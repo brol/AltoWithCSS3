@@ -1,0 +1,82 @@
+/*
+# ***** BEGIN LICENSE BLOCK *****
+#
+# altowithCSS3
+# Theme by Pierre Van Glabeke
+# License: http://creativecommons.org/licenses/by-sa/3.0/fr/
+#
+# ***** END LICENSE BLOCK *****
+*/
+
+/* SimpleMenu */
+#top {padding-bottom:11px;}
+#nav {
+  clear: both;
+  margin: -25px 0 45px 80px;
+  padding: 0;
+}
+
+#supranav {
+  margin: 0;
+  padding: 0;
+  background:none;
+}
+#supranav li {
+  display: block;
+  height: 26px;
+  text-transform: lowercase;
+  font-size: 10pt;
+  text-decoration: none;
+	float: left;
+	margin-right:10px;
+	background-color:#9999CC;
+	-webkit-border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-topright: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+* html #nav li { /* Filter for IE6 to prevent li stacking */
+  float: left;
+  text-decoration: none;
+}
+* html #nav li a { /* Filter for IE6 to prevent li stacking */
+  float: left;
+  margin-left: 4px;
+  text-decoration: none;
+}
+#supranav li a {
+  display: block;
+  margin-left: 9px;
+  padding-right: 9px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+#supranav li.active {
+	background-color:#bfbfbf;
+	-webkit-border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-topright: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#supranav li.active a {
+  color: #000;
+}
+#supranav li:hover {
+  text-decoration: none;
+	background-color:#bfbfbf;
+	-webkit-border-top-left-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  -moz-border-radius-topright: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#supranav li a:hover {
+  color: #000;
+}
