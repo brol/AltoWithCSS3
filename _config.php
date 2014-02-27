@@ -11,21 +11,19 @@ if (!defined('DC_CONTEXT_ADMIN')) { return; }
 // chargement de la traduction
 l10n::set(dirname(__FILE__).'/locales/'.$_lang.'/main');
 
-// affichage du type de menu
-$altowithcss3_menus = array(
-	__('none') => 'nomenu',
-	__('simpleMenu') => 'simplemenu'
-);
+#afficher menu
+$menu = $core->blog->settings->themes->altowithcss3_menu;
 
-if (!$core->blog->settings->themes->altowithcss3_menu) {
-	$core->blog->settings->themes->altowithcss3_menu = 'simplemenu';
-}
-
-if (!empty($_POST['altowithcss3_menu']) && in_array($_POST['altowithcss3_menu'],$altowithcss3_menus))
+if (!empty($_POST))
 {
-	$core->blog->settings->themes->altowithcss3_menu = $_POST['altowithcss3_menu'];
-	$core->blog->settings->addNamespace('themes');
-	$core->blog->settings->themes->put('altowithcss3_menu',$core->blog->settings->themes->altowithcss3_menu,'string','Menu to display',true);
+	$core->blog->settings->addNameSpace('themes');
+	$core->blog->settings->themes->put('altowithcss3_menu',
+			!empty($_POST['altowithcss3_menu']),
+			'boolean', 'Display simpleMenu');
+
+	# update setting
+	$menu = (!empty($_POST['altowithcss3_menu']));
+
 	$core->blog->triggerBlog();
 
 	dcPage::success(__('Theme configuration has been successfully updated.'));
@@ -33,8 +31,11 @@ if (!empty($_POST['altowithcss3_menu']) && in_array($_POST['altowithcss3_menu'],
 
 echo
 '<div class="fieldset"><h4>'.__('Customizations').'</h4>'.
-'<p class="field"><label>'.__('Menu to display:').'</label>'.
-form::combo('altowithcss3_menu',$altowithcss3_menus,$core->blog->settings->themes->altowithcss3_menu).
+ '<p>'.
+	form::checkbox('altowithcss3_menu',1,$menu).
+	'<label class="classic" for="altowithcss3_menu">'.
+		__('Display simpleMenu').
+	'</label>'.
 '</p>';
 
 // affichage de la largeur de page

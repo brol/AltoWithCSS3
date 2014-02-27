@@ -10,19 +10,23 @@ if (!defined('DC_RC_PATH')) { return; }
 
 l10n::set(dirname(__FILE__).'/locales/'.$_lang.'/main');
 
-$core->addBehavior('publicHeadContent','altowithcss3menu_publicHeadContent');
-
-function altowithcss3menu_publicHeadContent($core)
+# appel css simplemenu
+if ($core->blog->settings->themes->altowithcss3_menu)
 {
-	$style = $core->blog->settings->themes->altowithcss3_menu;
-	if (!preg_match('/^nomenu|simplemenu$/',$style)) {
-		$style = 'simplemenu';
-	}
-
-	$url = $core->blog->settings->themes_url.'/'.$core->blog->settings->theme;
-	echo '<link rel="stylesheet" type="text/css" media="screen" href="'.$url."/".$style.".css\" />\n";
+	$core->addBehavior('publicHeadContent',
+		array('tplAltowithcss3_menu','publicHeadContent'));
 }
 
+class tplAltowithcss3_menu
+{
+	public static function publicHeadContent($core)
+	{
+	$url = $core->blog->settings->themes_url.'/'.$core->blog->settings->theme;
+		echo '<link rel="stylesheet" type="text/css" media="screen" href="'.$url."/simplemenu.css\" />\n";
+	}
+}
+
+# appel css largeurs (1024.css ou 880.css)
 $core->addBehavior('publicHeadContent','altowithcss3width_publicHeadContent');
 
 function altowithcss3width_publicHeadContent($core)

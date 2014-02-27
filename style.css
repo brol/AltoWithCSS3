@@ -59,6 +59,8 @@ body {
 
 #prelude a { color: #ddd;}
 
+#nav {display:none;}
+
 #wrapper {
 	margin: 0 50px;
 }

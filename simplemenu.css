@@ -11,6 +11,7 @@
 /* SimpleMenu */
 #top {padding-bottom:11px;}
 #nav {
+  display:block;
   clear: both;
   margin: -25px 0 45px 80px;
   padding: 0;

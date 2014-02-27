@@ -13,11 +13,8 @@ msgstr ""
 msgid "Customizations"
 msgstr "Personnalisations"
 
-msgid "Menu to display:"
-msgstr "Menu à afficher :"
+msgid "Display simpleMenu"
+msgstr "Afficher Menu Simple"
 
 msgid "Display width:"
 msgstr "Largeur d'affichage :"
-
-msgid "none"
-msgstr "aucun"
