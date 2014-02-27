@@ -1,6 +1,6 @@
 AltoWithCSS3
 ============
-Le thème d’origine est l'oeuvre d’alto-studio <http://dc.alto-studio.fr/> qui a aussi fait le choix de la licence encore en vigueur sur ce thème.
+Le thème d’origine est l'oeuvre d’alto-studio <http://dc.alto-studio.fr/> qui a aussi fait le choix de la licence encore en vigueur sur ce thème
 
 Creative Commons - Attribution - Non Commercial <http://creativecommons.org/licenses/by-nc/2.0/fr/>
 
