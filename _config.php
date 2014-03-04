@@ -8,8 +8,6 @@
 # ***** END LICENSE BLOCK *****
 if (!defined('DC_CONTEXT_ADMIN')) { return; }
 
-if (!defined('DC_CONTEXT_ADMIN')) { return; }
-
 global $core;
 
 //PARAMS
