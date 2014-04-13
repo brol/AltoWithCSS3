@@ -150,7 +150,7 @@ code {
 	line-height :14px;
 }
 
-input { text-transform: lowercase; }
+/*input { text-transform: lowercase; }*/
 
 .left { float: left; }
 
@@ -214,6 +214,7 @@ code { color : #0273b9; }
   -webkit-border-radius: 9px;
   -moz-border-radius: 9px;
   border-radius: 9px;
+ /* border: 1px solid #e6e6e6;*/
 }
 
 .pagination, #navlinks { color: #e6e6e6; }
@@ -322,7 +323,9 @@ dd, dt {
 	font-size: 1em;
 	overflow: visible;
 }
-
+.post-excerpt a, .post-content a {
+	color: #0273B9;
+}
 .post p {
 	padding: 0 0 5px 0;
 	text-align: justify;
@@ -342,6 +345,7 @@ dd, dt {
 .footnotes p {
 	margin-top : 0; text-indent : 0;
 }
+.dc-post .post-content {margin:0.6em 0 0 0;}
 .post-excerpt p img, .post-content p img {
   max-width:100%;
 }
@@ -351,8 +355,9 @@ dd, dt {
 }
 
 .post-content ul li, .post-excerpt ul li, #attachments li {
-	padding: 0 0 5px 5px;
+	padding: 0 0 0 5px;
 	list-style-type: disc;
+	line-height:1.5em;
 }
 
 .post-content ol li, .post-excerpt ol li {
@@ -383,9 +388,9 @@ dd, dt {
 
 .post-tags a { padding: 2px 0 2px 18px; background: transparent url(img/tag.png) no-repeat 0 50%; }
 
-ul.post-tags li:after { content: ', '; }
+ul.post-tags li { margin-right:10px; }
 
-ul.post-tags li:last-child:after { content: ''; }
+ul.post-tags li:last-child { margin-right:0; }
 
 .post-tags li {
   display: inline;
@@ -411,6 +416,7 @@ ul.post-tags li:last-child:after { content: ''; }
 	font-weight: bold;
 	padding-bottom: 10px;
 	clear: left;
+	margin:0.9em 0 0 0;
 }
 
 .pagination, #navlinks {
@@ -453,8 +459,9 @@ ul.post-tags li:last-child:after { content: ''; }
 	padding: 0 0 0 20px;
 }
 #comments dd ul li, #pings dd ul li {
-	padding: 0 0 5px 5px;
+	padding: 0 0 0 5px;
 	list-style-type: disc;
+	line-height:1.5em;
 }
 
 #comments dd ol li, #pings dd ol li {

@@ -6,6 +6,7 @@
 # License: http://creativecommons.org/licenses/by-nc/2.0/fr/
 #
 # ***** END LICENSE BLOCK *****
+
 if (!defined('DC_CONTEXT_ADMIN')) { return; }
 
 global $core;

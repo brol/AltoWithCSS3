@@ -18,3 +18,9 @@ msgstr "Afficher Menu Simple"
 
 msgid "Display width:"
 msgstr "Largeur d'affichage :"
+
+msgid "by"
+msgstr "par"
+
+msgid "DC2 theme by"
+msgstr "Thème DC2 par"
