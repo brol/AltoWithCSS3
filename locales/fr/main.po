@@ -13,8 +13,17 @@ msgstr ""
 msgid "Customizations"
 msgstr "Personnalisations"
 
-msgid "Display simpleMenu"
-msgstr "Afficher Menu Simple"
+msgid "Menu to display:"
+msgstr "Menu à afficher :"
+
+msgid "none"
+msgstr "aucun"
+
+msgid "menuFreshy or menu (Adjaya)"
+msgstr "menuFreshy ou menu (Adjaya)"
+
+msgid "Plugins menu allowed: menuFreshy (or the <a href="http://forum.dotclear.org/viewtopic.php?id=32705">Adjaya menu</a> plugin), or simpleMenu."
+msgstr "Plugins menu acceptés : menuFreshy (ou le plugin <a href="http://forum.dotclear.org/viewtopic.php?id=32705">menu d'Adjaya</a>), ou simpleMenu."
 
 msgid "Display width:"
 msgstr "Largeur d'affichage :"

@@ -7,10 +7,11 @@
 #
 # ***** END LICENSE BLOCK *****
 */
+#nav {display:none;}
 
 /* SimpleMenu */
 #top {padding-bottom:11px;}
-#nav {
+#navsm {
   display:block;
   clear: both;
   margin: -25px 0 45px 80px;
@@ -38,11 +39,11 @@
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-* html #nav li { /* Filter for IE6 to prevent li stacking */
+* html #navsm li { /* Filter for IE6 to prevent li stacking */
   float: left;
   text-decoration: none;
 }
-* html #nav li a { /* Filter for IE6 to prevent li stacking */
+* html #navsm li a { /* Filter for IE6 to prevent li stacking */
   float: left;
   margin-left: 4px;
   text-decoration: none;
@@ -66,7 +67,6 @@
   border-top-right-radius: 10px;
 }
 #supranav li.active a {
-  color: #000;
 }
 #supranav li:hover {
   text-decoration: none;
@@ -79,5 +79,4 @@
   border-top-right-radius: 10px;
 }
 #supranav li a:hover {
-  color: #000;
 }

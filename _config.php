@@ -17,12 +17,19 @@ global $core;
 l10n::set(dirname(__FILE__).'/locales/'.$_lang.'/main');
 
 # Default values
-$default_menu = false;
+$default_menu = 'menu-no';
 $default_width = '1024';
 
 # Settings
 $my_menu = $core->blog->settings->themes->altowithcss3_menu;
 $my_width = $core->blog->settings->themes->altowithcss3_width;
+
+# Menu type
+$altowithcss3_menu_combo = array(
+	__('simpleMenu') => 'simplemenu',
+	__('menuFreshy or menu (Adjaya)') => 'menufreshy',
+	__('none') => 'menu-no'
+);
 
 # Width type
 $altowithcss3_width_combo = array(
@@ -38,18 +45,17 @@ if (!empty($_POST))
 	{
 		$core->blog->settings->addNamespace('themes');
 
-		# Menu
-		if (!empty($_POST['altowithcss3_menu']))
+		# Menu type
+		if (!empty($_POST['altowithcss3_menu']) && in_array($_POST['altowithcss3_menu'],$altowithcss3_menu_combo))
 		{
 			$my_menu = $_POST['altowithcss3_menu'];
-
 
 		} elseif (empty($_POST['altowithcss3_menu']))
 		{
 			$my_menu = $default_menu;
 
 		}
-		$core->blog->settings->themes->put('altowithcss3_menu',$my_menu,'boolean', 'Display simpleMenu',true);
+		$core->blog->settings->themes->put('altowithcss3_menu',$my_menu,'string','Menu to display',true);
 
 		# Width type
 		if (!empty($_POST['altowithcss3_width']) && in_array($_POST['altowithcss3_width'],$altowithcss3_width_combo))
@@ -82,12 +88,10 @@ if (!empty($_POST))
 # Menu
 echo
 '<div class="fieldset"><h4>'.__('Customizations').'</h4>'.
-'<p>'.
-	form::checkbox('altowithcss3_menu',1,$my_menu).
-	'<label class="classic" for="altowithcss3_menu">'.
-		__('Display simpleMenu').
-	'</label>'.
-'</p>';
+'<p class="field"><label>'.__('Menu to display:').'</label>'.
+form::combo('altowithcss3_menu',$altowithcss3_menu_combo,$my_menu).
+'</p>'.
+'<p class="info">'.__('Plugins menu allowed: menuFreshy (or the <a href="http://forum.dotclear.org/viewtopic.php?id=32705">Adjaya menu</a> plugin), or simpleMenu.').'</p>';
 
 # Width type
 echo

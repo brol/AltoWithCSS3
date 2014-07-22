@@ -1,0 +1,190 @@
+/*
+# ***** BEGIN LICENSE BLOCK *****
+#
+# altowithCSS3
+# Theme by Pierre Van Glabeke
+# License: http://creativecommons.org/licenses/by-sa/3.0/fr/
+#
+# ***** END LICENSE BLOCK *****
+*/
+
+#navsm {display:none;}
+
+/* MenuFreshy */
+#top {padding-bottom:11px;}
+
+#nav {
+  display:block;
+  clear: both;
+  padding:0 !important;
+  margin: -25px 0 45px 80px;
+	position:relative;
+	z-index:85;
+}
+#nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background:none;
+  float: left;
+  position: relative;
+}
+#nav ul ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background:#fff;
+  border:1px solid #bfbfbf;
+  float: left;
+	height:auto;
+	line-height:auto;
+  width: auto;
+  /*position: relative;*/
+	display:none;
+	position:absolute;
+	/*top:37px;*/
+	left:0;
+	-webkit-border-radius: 0 0 10px 10px;
+  -moz-border-radius: 0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
+}
+#nav ul li ul ul {
+	filter:none;
+	opacity:1;
+	background:none;
+	border:none;
+}
+#nav ul li:hover {
+	position:relative;
+	z-index:90;
+}
+#nav ul li:hover ul {
+	display:block;
+}
+
+#nav li {
+  float: left;
+  margin-right: 10px;
+	-webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0 0;
+  display: block;
+  height: 26px;
+  text-transform: lowercase;
+  font-size: 10pt;
+  text-decoration: none;
+	float: left;
+	margin-right:10px;
+	background-color:#9999CC;
+  line-height: 26px;
+}
+* html #nav li a { /* Filter for IE6 to prevent li stacking */
+  float: left;
+  text-decoration: none;
+}
+* html #nav li a { /* Filter for IE6 to prevent li stacking */
+  float: left;
+  margin-left: 4px;
+  text-decoration: none;
+}
+#nav li a {
+  display: block;
+  height: 26px;
+  text-transform: lowercase;
+  font-size: 10pt;
+  margin-left: 6px;
+  padding-left: 3px;
+  padding-right: 9px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #FFF;
+  text-decoration: none;
+}
+
+#nav li:hover, #nav li.top_parent, #nav li.current_page_item {
+  cursor: pointer; /* For IE6 */
+  text-decoration: none;
+	background-color:#bfbfbf;
+	-webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0 0;
+}
+
+#nav li li.top_parent, #nav li li.current_page_item {
+  cursor: pointer; /* For IE6 */
+  text-decoration: none;
+	background:none;
+}
+
+#nav li li.current_page_item a {
+	color:#bfbfbf;
+}
+#nav ul li li.current_page_item li a {color:#99c;}
+#nav ul li:hover {
+	position:relative;
+	z-index:90;
+}
+#nav ul li:hover ul {
+	display:block;
+}
+#nav ul li ul ul {
+	position:relative;
+	top:0;
+	padding:0;
+	margin:0;
+}
+#nav ul li {
+	padding:0;
+	vertical-align:middle;
+	float:left;
+	position:relative;
+}
+#nav ul li li:hover {
+  cursor: pointer; /* For IE6 */
+  text-decoration: none;
+	background:none;
+	-webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0 0;
+}
+#nav ul li li {
+	float:none;
+	clear:both;
+	width:auto;
+	height:auto;
+	margin:0;
+	padding:0;
+	white-space:nowrap;
+	display:block;
+	position:relative;
+	line-height:1.3em;
+  background:none;
+}
+#nav ul li li li {
+	padding:0 0 0 1em;
+}
+* html #nav ul li li {
+	width:200px;
+}
+#nav ul li a {
+	white-space:nowrap;
+}
+* html #nav ul li a {
+	width:10px;
+}
+* html #nav ul li li a, * html #nav ul li li ul {
+	width:100%;
+}
+#nav ul li li a:hover, #nav ul li li li a:hover {
+  color:#bfbfbf;
+}
+#nav ul li li, #nav ul li li li,
+#nav ul li li a, #nav ul li li li a {color:#9999cc;}
+#nav ul li ul li a {
+	display:block;
+	font-weight:normal;
+	position:relative;
+	text-decoration:none;
+	height:2em;
+	line-height:2em;
+}
