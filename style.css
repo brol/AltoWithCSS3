@@ -755,3 +755,5 @@ ul.post-tags li:last-child { margin-right:0; }
 
 /* divers */
 .center-text, .center-text p {text-align:center;}
+table tr * {border:1px solid silver;}
+table td * {border:none;}
