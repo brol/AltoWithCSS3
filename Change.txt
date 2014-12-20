@@ -1,3 +1,6 @@
+v1.4.1 - 20/12/2014 Pierre Van Glabeke :
+modif css
+
 v1.4 - 16/12/2014 Pierre Van Glabeke :
 html5 + ajouts css
 

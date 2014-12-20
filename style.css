@@ -469,7 +469,7 @@ ul.post-tags li:last-child { margin-right:0; }
 #comments dd.me, #comments dt.me { background-color:#e6e6e6; }
 
 
-#comments dt .comment-number, #pings dt .comment-number {
+#comments dt .comment-number, #pings dt .ping-number {
   font-size : 1.8em;
 }
 
