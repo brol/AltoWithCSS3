@@ -328,7 +328,7 @@ dd, dt {
 	padding: 0 0 5px 0;
 	text-align: justify;
 }
-
+.post embed, .post iframe {max-width:100%;}
 .read-it {
   padding: 5px 0;
 }
