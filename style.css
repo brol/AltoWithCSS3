@@ -120,7 +120,7 @@ html>body blockquote {
 	padding-left:10px;
 }
 
-acronym { cursor: help; text-decoration: underline; }
+abbr { cursor: help; text-decoration: underline; }
 
 pre {
 	text-align:left;
@@ -160,8 +160,8 @@ img {
 
 .error {
 	border: 1px dashed #fff;
-	padding: 5px 0;
-	margin: 20px 0 0 0;
+	padding: 5px 10px;
+	margin: 20px 0;
 	color: #fff;
 	background: #E2001A;
 }
@@ -278,40 +278,6 @@ dd, dt {
 
 #comment-form p.form-help { color: #999999; }
 
-#calendar table{
-	font-size: 9px;
-	text-align: center;
-	margin: 0 auto;
-	border-collapse: collapse;
-}
-
-#calendar table caption{
-	margin: 0 auto;
-}
-
-#calendar table th{
-	color: #333333;
-	background: transparent;
-}
-
-#calendar table td{
-	width: 14%;
-	line-height: 2em;
-	border: 0.1em solid #EEE;
-}
-
-#calendar table td a{
-	display: block;
-	background: #F7DFE6;
-	color: #0273b9;
-	font-weight: normal;
-	text-decoration: none;
-}
-
-#calendar table td a:hover{
-	background: #0273b9;
-	color: #F7DFE6;
-}
 
 /* Post */
 .post {
@@ -539,6 +505,7 @@ ul.post-tags li:last-child { margin-right:0; }
 	width: auto;
 	font-size: 1em;
 	font-weight: bold;
+  cursor:pointer;
 }
 
 /* Sidebar */
@@ -669,6 +636,7 @@ ul.post-tags li:last-child { margin-right:0; }
 
 #sidebar select, #sidebar input.text {
   width: 175px;
+  cursor:pointer;
 }
 
 #sidebar input[type=text]#sidebar {
@@ -739,21 +707,50 @@ ul.post-tags li:last-child { margin-right:0; }
   text-align: justify;
 }
 
-/* plugins */
-#tribunelibreformulaire input {
-  width: 170px;
-  padding: 0px;
-  margin: 5px 0;
-}
-#tribunelibreformulaire input.submit  {
-  width: auto;
-  margin: 0 0 2px 0;
-  padding: 2px;
-}
 /*citations*/
 .citations .auteur {font-style:italic;padding:0;margin-top:-10px;}
 
 /* divers */
 .center-text, .center-text p {text-align:center;}
-table tr * {border:1px solid silver;}
+table tr * {border:none;}
 table td * {border:none;}
+
+.calendar table{
+	font-size: 9px;
+	text-align: center;
+	margin: 0 auto;
+	border-collapse: collapse;
+}
+
+.calendar table caption{
+	margin: 0 auto;
+}
+
+.calendar table th {
+	color: #333333;
+	background: transparent;
+	border: none !important;
+}
+
+.calendar table tr {
+	border: none !important;
+}
+
+.calendar table td {
+	width: 14%;
+	line-height: 2em;
+	border: 0.1em solid #EEE;
+}
+
+.calendar table td a {
+	display: block;
+	background: #F7DFE6;
+	color: #0273b9;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.calendar table td a:hover {
+	background: #0273b9;
+	color: #F7DFE6;
+}
