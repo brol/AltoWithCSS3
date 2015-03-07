@@ -20,7 +20,7 @@ function altowithcss3menu_publicHeadContent($core)
 		$style = 'menu-no';
 	}
 
-	$url = $core->blog->settings->themes_url.'/'.$core->blog->settings->theme;
+	$url = $core->blog->settings->system->themes_url.'/'.$core->blog->settings->system->theme;
 	echo '<link rel="stylesheet" type="text/css" media="projection, screen" href="'.$url."/".$style.".css\" />\n";
 }
 
@@ -34,6 +34,6 @@ function altowithcss3width_publicHeadContent($core)
 		$style = '1024';
 	}
 
-	$url = $core->blog->settings->themes_url.'/'.$core->blog->settings->theme;
+	$url = $core->blog->settings->system->themes_url.'/'.$core->blog->settings->system->theme;
 	echo '<link rel="stylesheet" type="text/css" media="screen" href="'.$url."/".$style.".css\" />\n";
 }
