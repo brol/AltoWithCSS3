@@ -19,11 +19,11 @@ msgstr "Menu à afficher :"
 msgid "none"
 msgstr "aucun"
 
-msgid "menuFreshy or menu (Adjaya)"
-msgstr "menuFreshy ou menu (Adjaya)"
+msgid "Menu (Adjaya)"
+msgstr "Menu (Adjaya)"
 
-msgid "Plugins menu allowed: menuFreshy (or the <a href="http://forum.dotclear.org/viewtopic.php?id=32705">Adjaya menu</a> plugin), or simpleMenu."
-msgstr "Plugins menu acceptés : menuFreshy (ou le plugin <a href="http://forum.dotclear.org/viewtopic.php?id=32705">menu d'Adjaya</a>), ou simpleMenu."
+msgid "Plugins menu allowed: <a href="http://forum.dotclear.org/viewtopic.php?id=32705">Adjaya Menu</a> plugin or simpleMenu."
+msgstr "Plugins menu acceptés : <a href="http://forum.dotclear.org/viewtopic.php?id=32705">Menu d'Adjaya</a> ou simpleMenu."
 
 msgid "Display width:"
 msgstr "Largeur d'affichage :"
