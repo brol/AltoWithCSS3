@@ -27,7 +27,7 @@ $my_width = $core->blog->settings->themes->altowithcss3_width;
 # Menu type
 $altowithcss3_menu_combo = array(
 	__('simpleMenu') => 'simplemenu',
-	__('Menu (Adjaya)') => 'menufreshy',
+	__('Menu') => 'menufreshy',
 	__('none') => 'menu-no'
 );
 
@@ -91,7 +91,7 @@ echo
 '<p class="field"><label>'.__('Menu to display:').'</label>'.
 form::combo('altowithcss3_menu',$altowithcss3_menu_combo,$my_menu).
 '</p>'.
-'<p class="info">'.__('Plugins menu allowed: <a href="http://forum.dotclear.org/viewtopic.php?id=32705">Adjaya Menu</a> plugin or simpleMenu.').'</p>';
+'<p class="info">'.__('Plugins menu allowed: <a href="http://plugins.dotaddict.org/dc2/details/menu">Menu</a> plugin or simpleMenu.').'</p>';
 
 # Width type
 echo

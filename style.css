@@ -272,7 +272,8 @@ input:hover {
 	color: #0273B9;
 }
 
-dd, dt {
+#blognav dd, #blognav dt,
+#blogextra dd, #blogextra dt {
 	background: #F7DFE6;
 }
 
@@ -707,10 +708,8 @@ ul.post-tags li:last-child { margin-right:0; }
   text-align: justify;
 }
 
-/*citations*/
-.citations .auteur {font-style:italic;padding:0;margin-top:-10px;}
-
 /* divers */
+.citations .auteur {font-style:italic;padding:0;margin-top:-10px;}
 .center-text, .center-text p {text-align:center;}
 table tr * {border:none;}
 table td * {border:none;}

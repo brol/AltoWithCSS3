@@ -11,25 +11,25 @@ msgstr ""
 "X-Generator: Poedit 1.5.7\n"
 
 msgid "Customizations"
-msgstr "Personnalisations"
+msgstr "Personalizaciones"
 
 msgid "Menu to display:"
-msgstr "Menu à afficher :"
+msgstr "Menú para mostrar:"
 
 msgid "none"
-msgstr "aucun"
+msgstr "no cualquiera"
 
 msgid "Menu"
-msgstr "Menu"
+msgstr "Menú"
 
 msgid "Plugins menu allowed: <a href="http://plugins.dotaddict.org/dc2/details/menu">Menu</a> plugin or simpleMenu."
-msgstr "Plugins menu acceptés : <a href="http://plugins.dotaddict.org/dc2/details/menu">Menu</a> ou simpleMenu."
+msgstr "Menú Plugins permitidos: <a href="http://plugins.dotaddict.org/dc2/details/menu">Menú</a> o SimpleMenu."
 
 msgid "Display width:"
-msgstr "Largeur d'affichage :"
+msgstr "Mostrar Anchura:"
 
 msgid "by"
-msgstr "par"
+msgstr "por"
 
 msgid "DC2 theme by"
-msgstr "Thème DC2 par"
+msgstr "DC2 tema por"
