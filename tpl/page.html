@@ -1,63 +1,16 @@
-<!DOCTYPE html>
-<html lang="{{tpl:BlogLanguage}}">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="ROBOTS" content="{{tpl:BlogMetaRobots}}" />
+{{tpl:extends parent="post.html"}}
 
-  <title>{{tpl:EntryTitle encode_html="1"}} - {{tpl:BlogName encode_html="1"}}</title>
-  <meta name="description" lang="{{tpl:EntryLang}}" content="{{tpl:EntryContent full="1" encode_html="1" remove_html="1" cut_string="180"}}" />
-  <meta name="copyright" content="{{tpl:BlogCopyrightNotice encode_html="1"}}" />
-  <meta name="author" content="{{tpl:EntryAuthorCommonName encode_html="1"}}" />
-  <meta name="date" content="{{tpl:EntryDate iso8601="1"}}" />
+<tpl:Block name="head-linkrel">
+	<link rel="top" href="{{tpl:BlogURL}}" title="{{tpl:lang Home}}" />
+	<link rel="contents" href="{{tpl:BlogArchiveURL}}" title="{{tpl:lang Archives}}" />
+	<tpl:EntryIf pings_active="1"><link rel="pingback" href="{{tpl:BlogXMLRPCURL}}" /></tpl:EntryIf>
 
-  <meta property="dc.title" content="{{tpl:EntryTitle encode_html="1"}}" />
-  <meta property="dc.description" lang="{{tpl:EntryLang}}" content="{{tpl:EntryContent full="1" encode_html="1" remove_html="1" cut_string="180"}}" />
-  <meta property="dc.creator" content="{{tpl:EntryAuthorCommonName encode_html="1"}}" />
-  <meta property="dc.language" content="{{tpl:EntryLang}}" />
-  <meta property="dc.publisher" content="{{tpl:BlogEditor encode_html="1"}}" />
-  <meta property="dc.rights" content="{{tpl:BlogCopyrightNotice encode_html="1"}}" />
-  <meta property="dc.date" content="{{tpl:EntryDate iso8601="1"}}" />
-  <meta property="dc.type" content="text" />
-  <meta property="dc.format" content="text/html" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="{{tpl:BlogFeedURL type="atom"}}" />
+</tpl:Block>
 
-  <link rel="contents" href="{{tpl:BlogArchiveURL}}" title="{{tpl:lang Archives}}" />
-  <tpl:EntryIf pings_active="1"><link rel="pingback" href="{{tpl:BlogXMLRPCURL}}" /></tpl:EntryIf>
+<tpl:Block name="body-tag"><body class="dc-page"></tpl:Block>
 
-  <link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="{{tpl:BlogFeedURL type="atom"}}" />
-
-  {{tpl:include src="_head.html"}}
-
-  <script type="text/javascript" src="{{tpl:BlogQmarkURL}}pf=post.js"></script>
-  <script type="text/javascript">
-  //<![CDATA[
-  var post_remember_str = '{{tpl:lang Remember me on this blog}}';
-  //]]>
-  </script>
-  <script type="text/javascript">
-$(document).ready(function() {
-if ($('#pr').is(':visible')) {jQuery('.hidecomment-form').show()} else {$(".hidecomment-form").hide()};
-$("#comment-form h3").click(function() {
-	        var answer = jQuery(this).next();
-	        if (answer.is(':visible')) {
-	            answer.slideUp() } else {
-	            answer.slideDown();
-	        }
-	    });
-});
-</script>
-</head>
-
-<body class="dc-page">
-<div id="page">
-{{tpl:EntryPingData}}
-
-{{tpl:include src="_top.html"}}
-
-<div id="wrapper">
-
-<div id="main" role="main">
-  <div id="content">
-
+<tpl:Block name="main-content">
   <div id="p{{tpl:EntryID}}" class="post" role="article">
     <h2 class="post-title">{{tpl:EntryTitle encode_html="1"}}</h2>
     <p class="post-info">{{tpl:lang Published on}} {{tpl:EntryDate}}
@@ -238,22 +191,4 @@ $("#comment-form h3").click(function() {
   <p id="comments-feed"><a class="feed" href="{{tpl:BlogFeedURL type="atom"}}/comments/{{tpl:EntryID}}"
   title="{{tpl:lang This page's comments feed}}">{{tpl:lang This page's comments feed}}</a></p>
   </tpl:EntryIf>
-  </div>
-</div> <!-- End #main -->
-
-<div id="sidebar" role="complementary">
-  <div id="blognav">
-    {{tpl:Widgets type="nav"}}
-  </div> <!-- End #blognav -->
-
-  <div id="blogextra">
-    {{tpl:Widgets type="extra"}}
-  </div> <!-- End #blogextra -->
-</div>
-
-</div> <!-- End #wrapper -->
-
-{{tpl:include src="_footer.html"}}
-</div> <!-- End #page -->
-</body>
-</html>
+</tpl:Block>

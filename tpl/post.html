@@ -1,109 +1,107 @@
-<!DOCTYPE html>
-<html lang="{{tpl:BlogLanguage}}">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="ROBOTS" content="{{tpl:BlogMetaRobots}}" />
+{{tpl:extends parent="__layout.html"}}
 
-  <title>{{tpl:EntryTitle encode_html="1"}} - {{tpl:BlogName encode_html="1"}}</title>
-  <meta name="description" lang="{{tpl:EntryLang}}" content="{{tpl:EntryContent full="1" encode_html="1" remove_html="1" cut_string="180"}}" />
-  <meta name="copyright" content="{{tpl:BlogCopyrightNotice encode_html="1"}}" />
-  <meta name="author" content="{{tpl:EntryAuthorCommonName encode_html="1"}}" />
-  <meta name="date" content="{{tpl:EntryDate iso8601="1"}}" />
+<tpl:Block name="head-title">
+	<title>{{tpl:EntryTitle encode_html="1"}} - {{tpl:BlogName encode_html="1"}}</title>
+</tpl:Block>
 
-  <meta property="dc.title" content="{{tpl:EntryTitle encode_html="1"}}" />
-  <meta property="dc.description" lang="{{tpl:EntryLang}}" content="{{tpl:EntryContent full="1" encode_html="1" remove_html="1" cut_string="180"}}" />
-  <meta property="dc.creator" content="{{tpl:EntryAuthorCommonName encode_html="1"}}" />
-  <meta property="dc.language" content="{{tpl:EntryLang}}" />
-  <meta property="dc.publisher" content="{{tpl:BlogEditor encode_html="1"}}" />
-  <meta property="dc.rights" content="{{tpl:BlogCopyrightNotice encode_html="1"}}" />
-  <meta property="dc.date" content="{{tpl:EntryDate iso8601="1"}}" />
-  <meta property="dc.type" content="text" />
-  <meta property="dc.format" content="text/html" />
+<tpl:Block name="meta-entry">
+	<meta name="description" lang="{{tpl:EntryLang}}" content="{{tpl:EntryContent full="1" encode_html="1" remove_html="1" cut_string="180"}}" />
+	<meta name="author" content="{{tpl:EntryAuthorCommonName encode_html="1"}}" />
+	<meta name="date" content="{{tpl:EntryDate iso8601="1"}}" />
+</tpl:Block>
 
-  <link rel="contents" href="{{tpl:BlogArchiveURL}}" title="{{tpl:lang Archives}}" />
-  <tpl:EntryIf pings_active="1"><link rel="pingback" href="{{tpl:BlogXMLRPCURL}}" /></tpl:EntryIf>
+<tpl:Block name="dc-entry">
+	<meta property="dc.title" content="{{tpl:EntryTitle encode_html="1"}}" />
+	<meta property="dc.description" lang="{{tpl:EntryLang}}" content="{{tpl:EntryContent full="1" encode_html="1" remove_html="1" cut_string="180"}}" />
+	<meta property="dc.creator" content="{{tpl:EntryAuthorCommonName encode_html="1"}}" />
+	<meta property="dc.language" content="{{tpl:EntryLang}}" />
+	<meta property="dc.date" content="{{tpl:EntryDate iso8601="1"}}" />
+</tpl:Block>
 
-  <tpl:EntryNext><link rel="next" href="{{tpl:EntryURL}}"
-  title="{{tpl:EntryTitle encode_html="1"}}" /></tpl:EntryNext>
+<tpl:Block name="head-linkrel">
+	<link rel="top" href="{{tpl:BlogURL}}" title="{{tpl:lang Home}}" />
+	<link rel="contents" href="{{tpl:BlogArchiveURL}}" title="{{tpl:lang Archives}}" />
+	<tpl:EntryIf pings_active="1"><link rel="pingback" href="{{tpl:BlogXMLRPCURL}}" /></tpl:EntryIf>
 
-  <tpl:EntryPrevious><link rel="prev" href="{{tpl:EntryURL}}"
-  title="{{tpl:EntryTitle encode_html="1"}}" /></tpl:EntryPrevious>
+	<tpl:EntryNext><link rel="next" href="{{tpl:EntryURL}}"
+	title="{{tpl:EntryTitle encode_html="1"}}" /></tpl:EntryNext>
 
-  <link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="{{tpl:BlogFeedURL type="atom"}}" />
+	<tpl:EntryPrevious><link rel="prev" href="{{tpl:EntryURL}}"
+	title="{{tpl:EntryTitle encode_html="1"}}" /></tpl:EntryPrevious>
 
-  {{tpl:include src="_head.html"}}
+	<link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="{{tpl:BlogFeedURL type="atom"}}" />
+</tpl:Block>
 
-  <script type="text/javascript" src="{{tpl:BlogQmarkURL}}pf=post.js"></script>
+<tpl:Block name="html-head">
+	{{tpl:parent}}
+
+	<script type="text/javascript" src="{{tpl:BlogQmarkURL}}pf=post.js"></script>
+	<script type="text/javascript">
+		//<![CDATA[
+		var post_remember_str = '{{tpl:lang Remember me on this blog}}';
+		//]]>
+	</script>
   <script type="text/javascript">
-  //<![CDATA[
-  var post_remember_str = '{{tpl:lang Remember me on this blog}}';
-  //]]>
+  $(document).ready(function() {
+  if ($('#pr').is(':visible')) {jQuery('.hidecomment-form').show()} else {$(".hidecomment-form").hide()};
+  $("#comment-form h3").click(function() {
+  	        var answer = jQuery(this).next();
+  	        if (answer.is(':visible')) {
+  	            answer.slideUp() } else {
+  	            answer.slideDown();
+  	        }
+  	    });
+  });
   </script>
+</tpl:Block>
 
-<script type="text/javascript">
-$(document).ready(function() {
-if ($('#pr').is(':visible')) {jQuery('.hidecomment-form').show()} else {$(".hidecomment-form").hide()};
-$("#comment-form h3").click(function() {
-	        var answer = jQuery(this).next();
-	        if (answer.is(':visible')) {
-	            answer.slideUp() } else {
-	            answer.slideDown();
-	        }
-	    });
-});
-</script>
-</head>
+<tpl:Block name="body-tag"><body class="dc-post"></tpl:Block>
 
-<body class="dc-post">
-<div id="page">
-{{tpl:EntryPingData}}
+<tpl:Block name="page-top">
+	{{tpl:EntryPingData}}
+	{{tpl:parent}}
+</tpl:Block>
 
-{{tpl:include src="_top.html"}}
+<tpl:Block name="main-content">
+	<p id="navlinks">
+		<tpl:EntryPrevious><a href="{{tpl:EntryURL}}"
+		title="{{tpl:EntryTitle encode_html="1"}}" class="prev">&#171; {{tpl:EntryTitle encode_html="1"
+		cut_string="45"}}</a></tpl:EntryPrevious>
+		<tpl:EntryNext> <span>-</span> <a href="{{tpl:EntryURL}}"
+		title="{{tpl:EntryTitle encode_html="1"}}" class="next">{{tpl:EntryTitle encode_html="1"
+		cut_string="45"}} &#187;</a></tpl:EntryNext>
+	</p>
 
-<div id="wrapper">
+	<div id="p{{tpl:EntryID}}" class="post" role="article">
+		<h2 class="post-title">{{tpl:EntryTitle encode_html="1"}}</h2>
 
-<div id="main" role="main">
-  <div id="content">
- 
-  <p id="navlinks">
-  <tpl:EntryPrevious><a href="{{tpl:EntryURL}}"
-  title="{{tpl:EntryTitle encode_html="1"}}" class="prev">&#171; {{tpl:EntryTitle encode_html="1"
-cut_string="45"}}</a></tpl:EntryPrevious>
-  <tpl:EntryNext> <span>-</span> <a href="{{tpl:EntryURL}}"
-  title="{{tpl:EntryTitle encode_html="1"}}" class="next">{{tpl:EntryTitle encode_html="1"
-  cut_string="45"}} &#187;</a></tpl:EntryNext>
-  </p>
-  
-  <div id="p{{tpl:EntryID}}" class="post" role="article">
-    <h2 class="post-title">{{tpl:EntryTitle encode_html="1"}}</h2>
-    
-    <p class="post-info">{{tpl:lang By}} {{tpl:EntryAuthorLink}}
-    {{tpl:lang on}} {{tpl:EntryDate}}, {{tpl:EntryTime}}
-    <tpl:EntryIf has_category="1">
-    - <a href="{{tpl:EntryCategoryURL}}">{{tpl:EntryCategory encode_html="1"}}</a>
-    </tpl:EntryIf>
-    - <a href="{{tpl:EntryURL}}">{{tpl:lang Permalink}}</a>
-    </p>
+		<p class="post-info">{{tpl:lang By}} {{tpl:EntryAuthorLink}}
+		{{tpl:lang on}} {{tpl:EntryDate}}, {{tpl:EntryTime}}
+		<tpl:EntryIf has_category="1">
+		- <a href="{{tpl:EntryCategoryURL}}">{{tpl:EntryCategory encode_html="1"}}</a>
+		</tpl:EntryIf>
+		- <a href="{{tpl:EntryURL}}">{{tpl:lang Permalink}}</a>
+		</p>
 
-    <tpl:EntryTags>
-    <tpl:TagsHeader><ul class="post-tags"></tpl:TagsHeader>
-    <li><a href="{{tpl:TagURL}}" rel="tag">{{tpl:TagID}}</a></li>
-    <tpl:TagsFooter></ul></tpl:TagsFooter>
-    </tpl:EntryTags>
-    
-    <!-- # --BEHAVIOR-- publicEntryBeforeContent -->
-    {{tpl:SysBehavior behavior="publicEntryBeforeContent"}}
-    
-    <!-- # Entry with an excerpt -->
-    <tpl:EntryIf extended="1">
-      <div class="post-excerpt">{{tpl:EntryExcerpt}}</div>
-    </tpl:EntryIf>
-    
-    <div class="post-content">{{tpl:EntryContent}}</div>
-    
-    <!-- # --BEHAVIOR-- publicEntryAfterContent -->
-    {{tpl:SysBehavior behavior="publicEntryAfterContent"}}
+		<tpl:EntryTags>
+		<tpl:TagsHeader><ul class="post-tags"></tpl:TagsHeader>
+		<li><a href="{{tpl:TagURL}}" rel="tag">{{tpl:TagID}}</a></li>
+		<tpl:TagsFooter></ul></tpl:TagsFooter>
+		</tpl:EntryTags>
 
+		<!-- # --BEHAVIOR-- publicEntryBeforeContent -->
+		{{tpl:SysBehavior behavior="publicEntryBeforeContent"}}
+
+		<!-- # Entry with an excerpt -->
+		<tpl:EntryIf extended="1">
+			<div class="post-excerpt">{{tpl:EntryExcerpt}}</div>
+		</tpl:EntryIf>
+
+		<div class="post-content">{{tpl:EntryContent}}</div>
+
+		<!-- # --BEHAVIOR-- publicEntryAfterContent -->
+		{{tpl:SysBehavior behavior="publicEntryAfterContent"}}
+		
 	<div class="postend"></div>
 	</div>
   
@@ -188,7 +186,7 @@ cut_string="45"}}</a></tpl:EntryPrevious>
     </tpl:IfCommentPreview>
 
       <h3>{{tpl:lang Add a comment}}</h3>
-	<div class="hidecomment-form">
+	    <div class="hidecomment-form">
       <fieldset>
         <!-- # --BEHAVIOR-- publicCommentFormBeforeContent -->
         {{tpl:SysBehavior behavior="publicCommentFormBeforeContent"}}
@@ -225,7 +223,7 @@ cut_string="45"}}</a></tpl:EntryPrevious>
         <p class="buttons"><input type="submit" class="preview" name="preview" value="{{tpl:lang preview}}" />
         <tpl:IfCommentPreviewOptional><input type="submit" class="submit" value="{{tpl:lang send}}" /></tpl:IfCommentPreviewOptional></p>
       </fieldset>
- 	</div>
+ 	    </div>
    </form>
   </tpl:EntryIf>
   
@@ -268,22 +266,4 @@ cut_string="45"}}</a></tpl:EntryPrevious>
   <p id="comments-feed"><a class="feed" href="{{tpl:BlogFeedURL type="atom"}}/comments/{{tpl:EntryID}}"
   title="{{tpl:lang This post's comments Atom feed}}">{{tpl:lang This post's comments feed}}</a></p>
   </tpl:EntryIf>
-  </div>
-</div> <!-- End #main -->
-
-<div id="sidebar" role="complementary">
-  <div id="blognav">
-    {{tpl:Widgets type="nav"}}
-  </div> <!-- End #blognav -->
-  
-  <div id="blogextra">
-    {{tpl:Widgets type="extra"}}
-  </div> <!-- End #blogextra -->
-</div>
-
-</div> <!-- End #wrapper -->
-
-{{tpl:include src="_footer.html"}}
-</div> <!-- End #page -->
-</body>
-</html>
+</tpl:Block>

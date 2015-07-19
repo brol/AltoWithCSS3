@@ -16,12 +16,12 @@ $core->addBehavior('publicHeadContent','altowithcss3menu_publicHeadContent');
 function altowithcss3menu_publicHeadContent($core)
 {
 	$style = $core->blog->settings->themes->altowithcss3_menu;
-	if (!preg_match('/^menufreshy|simplemenu|menu-no$/',$style)) {
-		$style = 'menu-no';
+	if (!preg_match('/^menu|simplemenu|menuno$/',$style)) {
+		$style = 'simplemenu';
 	}
 
 	$url = $core->blog->settings->system->themes_url.'/'.$core->blog->settings->system->theme;
-	echo '<link rel="stylesheet" type="text/css" media="projection, screen" href="'.$url."/".$style.".css\" />\n";
+	echo '<link rel="stylesheet" type="text/css" media="screen" href="'.$url."/".$style.".css\" />\n";
 }
 
 # appel css largeurs (1024.css ou 880.css)

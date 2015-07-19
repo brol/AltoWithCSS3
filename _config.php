@@ -17,7 +17,7 @@ global $core;
 l10n::set(dirname(__FILE__).'/locales/'.$_lang.'/main');
 
 # Default values
-$default_menu = 'menu-no';
+$default_menu = 'simplemenu';
 $default_width = '1024';
 
 # Settings
@@ -27,8 +27,8 @@ $my_width = $core->blog->settings->themes->altowithcss3_width;
 # Menu type
 $altowithcss3_menu_combo = array(
 	__('simpleMenu') => 'simplemenu',
-	__('Menu') => 'menufreshy',
-	__('none') => 'menu-no'
+	__('Menu') => 'menu',
+	__('none') => 'menuno'
 );
 
 # Width type
