@@ -67,7 +67,7 @@ body {
 	float: left;
 	overflow: visible;
 }
-#breadcrumb {margin-left:30px;padding-bottom:20px;}
+#breadcrumb {margin:0 0 20px;padding:0 0 0 30px;}
 #content {
 	margin-left: 30px;
 	overflow: visible;
@@ -148,6 +148,10 @@ code {
 	line-height :14px;
 }
 
+a.feed {
+  background: transparent url("img/rss.png") no-repeat scroll 0 50%;
+  padding: 5px 0 5px 22px;
+}
 /*input { text-transform: lowercase; }*/
 
 .left { float: left; }
@@ -265,7 +269,9 @@ code { color : #0273b9; }
 /*les autres */
 #sidebar div ul {background:#f7dfe6;}
 /* Pour Safari, ajouter les divisions contenant les élements arrondis */
-#content, #topnav, #sidebar .tags, #sidebar .selected, #sidebar .feed, div.content-inner, #sidebar .links, #sidebar .langs, #sidebar .authors, #sidebar .syndicate, #sidebar .lastposts, #attachments, dl, #sidebar .categories, #sidebar .lastcomments, #sidebar #galleries, #comment-form, #sidebar .pages, div#sidebar {background: #fff;}
+#content, #topnav, #sidebar .tags, #sidebar .selected, #sidebar .feed, div.content-inner, #sidebar .links, #sidebar .langs, #sidebar .authors, #sidebar .syndicate, #sidebar .lastposts, #attachments, dl, #sidebar .categories, #sidebar .lastcomments, #sidebar #galleries, #comment-form, #sidebar .pages, div#sidebar {
+  background: #fff;
+}
 
 input:hover {
 	color: #0273B9;
@@ -445,11 +451,6 @@ ul.post-tags li:last-child { margin-right:0; }
   margin-top : 10px;;
 }
 
-#comments-feed a:link, #comments-feed a:visited {
-  background: transparent url(img/rss.png) no-repeat 0px 50%;
-  padding: 3px 5px 2px 22px;
-}
-
 #ping-url {
   font-size: 0.85em;
 	text-align: left;
@@ -518,7 +519,7 @@ ul.post-tags li:last-child { margin-right:0; }
 #sidebar h2 {
 	font-family: Arial, Helvetica, "Trebuchet MS", sans-serif;
 	font-size: 21px;
-	padding: 10px 0 5px 0;
+	padding: 5px 0 0;
 }
 
 #sidebar h3 {
@@ -699,11 +700,6 @@ ul.post-tags li:last-child { margin-right:0; }
 #content-info p {
   padding: 10px 0;
   font-size: 0.9em;
-}
-
-#content-info p a.feed:link, #content-info p a.feed:visited {
-	padding: 3px 0 3px 22px;
-	background: transparent url(img/rss.png) no-repeat 1px 3px;
 }
 
 .dc-category #content-info {

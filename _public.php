@@ -21,7 +21,7 @@ function altowithcss3menu_publicHeadContent($core)
 	}
 
 	$url = $core->blog->settings->system->themes_url.'/'.$core->blog->settings->system->theme;
-	echo '<link rel="stylesheet" type="text/css" media="screen" href="'.$url."/".$style.".css\" />\n";
+	echo '<link rel="stylesheet" type="text/css" media="screen" href="'.$url."/css/menu/".$style.".css\" />\n";
 }
 
 # appel css largeurs (1024.css ou 880.css)
@@ -35,5 +35,5 @@ function altowithcss3width_publicHeadContent($core)
 	}
 
 	$url = $core->blog->settings->system->themes_url.'/'.$core->blog->settings->system->theme;
-	echo '<link rel="stylesheet" type="text/css" media="screen" href="'.$url."/".$style.".css\" />\n";
+	echo '<link rel="stylesheet" type="text/css" media="screen" href="'.$url."/css/width/".$style.".css\" />\n";
 }
