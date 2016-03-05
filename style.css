@@ -36,17 +36,22 @@ body {
 	position : absolute;
 	background-color: transparent;
 	height: 150px;
-	top : 69px ;
-	left : 79px ;
+	top : 69px;
+	left : 79px;
 	z-index: 1;
 	padding: 0;
 }
 
 #top h1 {
 	position : absolute;
-	top: 168px;
-	left: 83px;
+	top: 162px;
+  line-height: 1.3em;
+  margin: 0;
+  padding: 0;
 	z-index: 2;
+}
+#top h1 a {
+  margin-left: 5px;
 }
 
 #prelude {
@@ -188,7 +193,11 @@ h1, h2, h3, h4, h5, .post-title, .day-date { color: #333333; }
 a {
 	color: #000;
 	text-decoration : none;
-	}
+}
+#top h1 {
+  background: #000 none repeat scroll 0 0;
+  opacity: 0.6;
+}
 #top a {
 	color: #fff;
 }

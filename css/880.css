@@ -17,7 +17,10 @@
 #top {
 	background: transparent url(../img/880/top.png) no-repeat top left;
 }
-#top h1 {width:860px;}
+#top h1 {
+  width:723px;
+  left: 79px;
+}
 
 #banner {
 	width: 723px;
