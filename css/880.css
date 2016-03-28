@@ -10,16 +10,15 @@
 
 /* Structure */
 #page {
-	background: transparent url(../img/880/page.png) repeat-y top left;
-	width: 880px;
+	width: 780px;
 }
 
 #top {
-	background: transparent url(../img/880/top.png) no-repeat top left;
+	background: transparent url(../img/880/top.png) no-repeat top center;
 }
 #top h1 {
   width:723px;
-  left: 79px;
+  left: 29px;
 }
 
 #banner {
@@ -41,7 +40,7 @@
 }
 
 #footer {
-	background: transparent url(../img/880/footer.png) repeat-y top left;
+	background: transparent url(../img/880/footer.png) no-repeat top center;
 }
 
 #comment-form textarea {

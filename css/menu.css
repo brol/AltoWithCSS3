@@ -10,14 +10,14 @@
 
 #navsm {display:none;}
 
-/* MenuFreshy */
+/* Menu */
 #top {padding-bottom:11px;}
 
 #nav {
   display:block;
   clear: both;
   padding:0 !important;
-  margin: -25px 0 45px 80px;
+  margin: 0px 0 45px 29px;
 	position:relative;
 	z-index:85;
 }
@@ -39,10 +39,8 @@
 	height:auto;
 	line-height:auto;
   width: auto;
-  /*position: relative;*/
 	display:none;
 	position:absolute;
-	/*top:37px;*/
 	left:0;
 	-webkit-border-radius: 0 0 10px 10px;
   -moz-border-radius: 0 0 10px 10px;

@@ -14,7 +14,7 @@
 #navsm {
   display:block;
   clear: both;
-  margin: -25px 0 45px 80px;
+  margin: 0 0 45px 29px;
   padding: 0;
 }
 
@@ -32,12 +32,9 @@
 	float: left;
 	margin-right:10px;
 	background-color:#9999CC;
-	-webkit-border-top-left-radius: 10px;
-  -webkit-border-top-right-radius: 10px;
-  -moz-border-radius-topleft: 10px;
-  -moz-border-radius-topright: 10px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+	-webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0 0;
 }
 * html #navsm li { /* Filter for IE6 to prevent li stacking */
   float: left;
@@ -59,24 +56,18 @@
 }
 #supranav li.active {
 	background-color:#bfbfbf;
-	-webkit-border-top-left-radius: 10px;
-  -webkit-border-top-right-radius: 10px;
-  -moz-border-radius-topleft: 10px;
-  -moz-border-radius-topright: 10px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+	-webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0 0;
 }
 #supranav li.active a {
 }
 #supranav li:hover {
   text-decoration: none;
 	background-color:#bfbfbf;
-	-webkit-border-top-left-radius: 10px;
-  -webkit-border-top-right-radius: 10px;
-  -moz-border-radius-topleft: 10px;
-  -moz-border-radius-topright: 10px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+	-webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0 0;
 }
 #supranav li a:hover {
 }

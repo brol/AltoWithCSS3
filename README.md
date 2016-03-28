@@ -10,4 +10,4 @@ Si vous voulez en ajouter d'autres, il est impératif de se conformer aux règle
 - les nommer de manière identique "roundX.ext" où X est un chiffre
 - en cas d'ajout (et non de remplacement), il faut modifier :
   * le fichier tpl/user_head.html et indiquer en ligne 3 (```var round = parseInt(Math.random()*3);```) le nombre total d'image de bannière (3 par défaut)
-  * le fichier css correspondant à la largeur de page choisi (css/880.css ou css/1024.css) en prenant exemple sur la déclaration css en ligne 29 : ```.round0 { background : transparent url(../img/1024/round0.jpg) no-repeat top left; }```
+  * le fichier css correspondant à la largeur de page choisie (css/880.css ou css/1024.css) en prenant exemple sur la déclaration css en ligne 28 : ```.round0 { background : transparent url(../img/1024/round0.jpg) no-repeat top left; }```

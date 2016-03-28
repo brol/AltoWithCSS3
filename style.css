@@ -19,13 +19,14 @@ body {
 
 /* Structure */
 #page {
-	margin: 0 auto;
+	margin: 40px auto;
 	padding: 0;
 	position: relative;
+	box-shadow: 5px 5px 5px grey;
 }
 
 #top {
-  height: 250px;
+  height: 185px;
   margin: 0;
   padding: 0;
 	z-index: 0;
@@ -36,15 +37,15 @@ body {
 	position : absolute;
 	background-color: transparent;
 	height: 150px;
-	top : 69px;
-	left : 79px;
+	top : 29px;
+	left : 29px;
 	z-index: 1;
 	padding: 0;
 }
 
 #top h1 {
 	position : absolute;
-	top: 162px;
+	top: 122px;
   line-height: 1.3em;
   margin: 0;
   padding: 0;
@@ -56,16 +57,16 @@ body {
 
 #prelude {
 	position: absolute;
-	top: 45px;
-	right: 120px;
+	top: 5px;
+	right: 70px;
 	padding: 0 10px;
 	font-size: 0.6em;
 }
 
-#prelude a { color: #ddd;}
+#prelude a { color: #bcbcbc;}
 
 #wrapper {
-	margin: 0 50px;
+	margin: 0;
 }
 
 #main {
@@ -89,7 +90,7 @@ body {
 }
 
 #footer {
-	height: 120px;
+	height: 70px;
 }
 
 #footer p {
@@ -193,6 +194,9 @@ h1, h2, h3, h4, h5, .post-title, .day-date { color: #333333; }
 a {
 	color: #000;
 	text-decoration : none;
+}
+#page {
+	background: #fff;
 }
 #top h1 {
   background: #000 none repeat scroll 0 0;
@@ -456,7 +460,6 @@ ul.post-tags li:last-child { margin-right:0; }
 }
 
 #comments-feed {
-  /*font-weight: bold;*/
   margin-top : 10px;;
 }
 
