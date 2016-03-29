@@ -11,7 +11,6 @@
 * { margin: 0; padding: 0; border: 0; }
 
 body {
-	background: #CCCCCC;
 	font-family: Tahoma, Arial, Verdana, Geneva, Helvetica, sans-serif;
 	font-size: 0.8em;
 	line-height: 1.6em;
@@ -186,8 +185,7 @@ img {
 }
 
 /* Couleurs */
-
-body { color: #000; }
+body { background: #ccc; color: #000; }
 
 h1, h2, h3, h4, h5, .post-title, .day-date { color: #333333; }
 
@@ -247,20 +245,14 @@ code { color : #0273b9; }
   border-radius: 9px;
 }
 #comments dt, #pings dt {
-  -webkit-border-top-left-radius: 9px;
-  -webkit-border-top-right-radius: 9px;
-  -moz-border-radius-topleft: 9px;
-  -moz-border-radius-topright: 9px;
-  border-top-left-radius: 9px;
-  border-top-right-radius: 9px;
+  -webkit-border-radius:  9px 9px 0 0;
+  -moz-border-radius:  9px 9px 0 0;
+  border-radius: 9px 9px 0 0;
 }
 #comments dd, #pings dd {
-  -webkit-border-bottom-right-radius: 9px;
-  -webkit-border-bottom-left-radius: 9px;
-  -moz-border-radius-bottomright: 9px;
-  -moz-border-radius-bottomleft: 9px;
-  border-bottom-right-radius: 9px;
-  border-bottom-left-radius: 9px;
+  -webkit-border-radius:  0 0 9px 9px;
+  -moz-border-radius:  0 0 9px 9px;
+  border-radius: 0 0 9px 9px;
 }
 /* Choix des couleurs pour les éléments arrondis */
 #sidebar .tags ul, #sidebar .selected ul, #sidebar .feed ul, .dc-tags ul.tags, #sidebar .pages ul {
