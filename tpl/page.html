@@ -1,10 +1,8 @@
 {{tpl:extends parent="post.html"}}
 
 <tpl:Block name="head-linkrel">
-	<link rel="top" href="{{tpl:BlogURL}}" title="{{tpl:lang Home}}" />
 	<link rel="contents" href="{{tpl:BlogArchiveURL}}" title="{{tpl:lang Archives}}" />
 	<tpl:EntryIf pings_active="1"><link rel="pingback" href="{{tpl:BlogXMLRPCURL}}" /></tpl:EntryIf>
-
 	<link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="{{tpl:BlogFeedURL type="atom"}}" />
 </tpl:Block>
 
@@ -15,6 +13,7 @@
     <h2 class="post-title">{{tpl:EntryTitle encode_html="1"}}</h2>
     <p class="post-info">{{tpl:lang Published on}} {{tpl:EntryDate}}
     {{tpl:lang by}} {{tpl:EntryAuthorLink}}
+		- {{tpl:postCountIncrement}} {{tpl:postCountGet}} <!-- # postcount -->
     </p>
 
     <!-- # --BEHAVIOR-- publicEntryBeforeContent -->
@@ -138,7 +137,7 @@
         <p style="display:none"><input name="f_mail" type="text" size="30"
         maxlength="255" value="" /></p>
 
-        <p class="field"><label for="c_content" aria-describedby="c_help">{{tpl:lang Comment}}&nbsp;:</label>
+        <p class="field"><label for="c_content">{{tpl:lang Comment}}&nbsp;:</label>
         <textarea name="c_content" id="c_content" cols="35"
         rows="7">{{tpl:CommentPreviewContent raw="1" encode_html="1"}}</textarea>
         </p>
