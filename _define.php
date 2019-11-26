@@ -11,10 +11,10 @@ $this->registerModule(
 	/* Name */			    "AltoWithCSS3",
 	/* Description*/		"Alto with CSS3",
 	/* Author */			  "Pierre Van Glabeke",
-	/* Version */		  	'1.8',
+	/* Version */		  	'1.9',
 	array(
 		'type'	 =>	'theme',
 		'tplset' => 'mustek',
-		'dc_min' => '2.9'
+		'dc_min' => '2.15'
 	)
 );
