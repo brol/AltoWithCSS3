@@ -14,11 +14,10 @@ $this->registerModule(
     'AltoWithCSS3',
     'Alto with CSS3',
     'Pierre Van Glabeke',
-    '1.9',
+    '1.9.1',
     [
         'requires' => [['core', '2.24']],
         'type'     => 'theme',
         'tplset'   => 'mustek',
-        'dc_min'   => '2.15',
     ]
 );
