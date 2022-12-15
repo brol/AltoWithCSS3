@@ -1,4 +1,5 @@
 <?php
+
 # ***** BEGIN LICENSE BLOCK *****
 #
 # AltoWithCSS3
@@ -6,15 +7,17 @@
 # License: http://creativecommons.org/licenses/by-nc/2.0/fr/
 #
 # ***** END LICENSE BLOCK *****
-if (!defined('DC_RC_PATH')) { return; }
+if (!defined('DC_RC_PATH')) {
+    return;
+}
 $this->registerModule(
-	/* Name */			    "AltoWithCSS3",
-	/* Description*/		"Alto with CSS3",
-	/* Author */			  "Pierre Van Glabeke",
-	/* Version */		  	'1.9',
-	array(
-		'type'	 =>	'theme',
-		'tplset' => 'mustek',
-		'dc_min' => '2.15'
-	)
+    'AltoWithCSS3',
+    'Alto with CSS3',
+    'Pierre Van Glabeke',
+    '1.9.1',
+    [
+        'requires' => [['core', '2.24']],
+        'type'     => 'theme',
+        'tplset'   => 'mustek',
+    ]
 );
