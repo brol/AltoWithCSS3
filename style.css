@@ -225,7 +225,6 @@ code { color : #0273b9; }
 .post, #comment-form .hidecomment-form, .content-inner ul, .dc-archive-month .content-inner {
   background: #e6e6e6;
   -webkit-border-radius: 9px;
-  -moz-border-radius: 9px;
   border-radius: 9px;
 }
 
@@ -241,17 +240,14 @@ code { color : #0273b9; }
 #attachments ul,
 #pr dd {
   -webkit-border-radius: 9px;
-  -moz-border-radius: 9px;
   border-radius: 9px;
 }
 #comments dt, #pings dt {
   -webkit-border-radius:  9px 9px 0 0;
-  -moz-border-radius:  9px 9px 0 0;
   border-radius: 9px 9px 0 0;
 }
 #comments dd, #pings dd {
   -webkit-border-radius:  0 0 9px 9px;
-  -moz-border-radius:  0 0 9px 9px;
   border-radius: 0 0 9px 9px;
 }
 /* Choix des couleurs pour les éléments arrondis */
@@ -274,7 +270,7 @@ code { color : #0273b9; }
 /*les autres */
 #sidebar div ul {background:#f7dfe6;}
 /* Pour Safari, ajouter les divisions contenant les élements arrondis */
-#content, #topnav, #sidebar .tags, #sidebar .selected, #sidebar .feed, div.content-inner, #sidebar .links, #sidebar .langs, #sidebar .authors, #sidebar .syndicate, #sidebar .lastposts, #attachments, dl, #sidebar .categories, #sidebar .lastcomments, #sidebar #galleries, #comment-form, #sidebar .pages, div#sidebar {
+#content, #topnav, #sidebar .tags, #sidebar .selected, #sidebar .feed, div.content-inner, #sidebar .links, #sidebar .langs, #sidebar .authors, #sidebar .syndicate, #sidebar .lastposts, #attachments, dl, #sidebar .categories, #sidebar .lastcomments, #sidebar #galleries, #comment-form, #sidebar .pages/*, div#sidebar */{
   background: #fff;
 }
 

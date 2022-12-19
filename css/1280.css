@@ -1,0 +1,52 @@
+/*
+# ***** BEGIN LICENSE BLOCK *****
+#
+# AltoWithCSS3
+# Theme by Pierre Van Glabeke
+# License: http://creativecommons.org/licenses/by-nc/2.0/fr/
+#
+# ***** END LICENSE BLOCK *****
+*/
+
+/* Structure */
+#page {
+	width: 1280px;
+}
+
+#top {
+	background: transparent url(../img/1280/top.png) no-repeat top center;
+}
+#top h1 {
+  width:1220px;
+  left: 29px;
+}
+
+#banner {
+	width: 1220px;
+}
+
+.round0 { background : transparent url(../img/1280/round0.png) no-repeat top left; }
+
+.round1 { background : transparent url(../img/1280/round1.png) no-repeat top left; }
+
+.round2 { background : transparent url(../img/1280/round2.png) no-repeat top left; }
+
+#wrapper {
+	width: 1283px;
+}
+
+#main {
+	width: 960px;
+}
+
+#sidebar {
+	width: 300px;
+}
+
+#footer {
+	background: transparent url(../img/1280/footer.png) no-repeat top center;
+}
+
+#comment-form textarea {
+  width: 905px;
+}

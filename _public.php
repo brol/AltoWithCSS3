@@ -29,7 +29,7 @@ function altowithcss3_publicHeadContent()
 
     // width
     $style = dcCore::app()->blog->settings->themes->altowithcss3_width;
-    if (!preg_match('/^880|1024$/', (string) $style)) {
+    if (!preg_match('/^880|1024|1280$/', (string) $style)) {
         $style = '1024';
     }
 

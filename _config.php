@@ -36,6 +36,7 @@ $altowithcss3_menu_combo = [
 $altowithcss3_width_combo = [
     __('880')  => '880',
     __('1024') => '1024',
+    __('1280') => '1280',
 ];
 
 // POST ACTIONS

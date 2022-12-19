@@ -14,7 +14,7 @@ $this->registerModule(
     'AltoWithCSS3',
     'Alto with CSS3',
     'Pierre Van Glabeke',
-    '1.9.1',
+    '2.0',
     [
         'requires' => [['core', '2.24']],
         'type'     => 'theme',
