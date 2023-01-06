@@ -19,17 +19,11 @@ msgstr "Menu à afficher :"
 msgid "none"
 msgstr "aucun"
 
-msgid "Menu"
-msgstr "Menu"
-
 msgid "Plugins menu allowed: <a href="http://plugins.dotaddict.org/dc2/details/menu">Menu</a> plugin or simpleMenu."
 msgstr "Plugins menu acceptés : <a href="http://plugins.dotaddict.org/dc2/details/menu">Menu</a> ou simpleMenu."
 
 msgid "Display width:"
 msgstr "Largeur d'affichage :"
-
-msgid "by"
-msgstr "par"
 
 msgid "DC2 theme by"
 msgstr "Thème DC2 par"

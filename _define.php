@@ -1,12 +1,14 @@
 <?php
+/**
+ * @brief AltoWithCSS3, a theme for Dotclear 2
+ *
+ * @package Dotclear
+ * @subpackage Theme
+ *
+ * @author Pierre Van Glabeke
+ * @copyright http://creativecommons.org/licenses/by-nc/2.0/fr/
+ */
 
-# ***** BEGIN LICENSE BLOCK *****
-#
-# AltoWithCSS3
-# Theme by Pierre Van Glabeke
-# License: http://creativecommons.org/licenses/by-nc/2.0/fr/
-#
-# ***** END LICENSE BLOCK *****
 if (!defined('DC_RC_PATH')) {
     return;
 }
@@ -14,9 +16,10 @@ $this->registerModule(
     'AltoWithCSS3',
     'Alto with CSS3',
     'Pierre Van Glabeke',
-    '2.0',
+    '2.0.1',
     [
         'requires' => [['core', '2.24']],
+        'standalone_config' => true,
         'type'     => 'theme',
         'tplset'   => 'mustek',
     ]
