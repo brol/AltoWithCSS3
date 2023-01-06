@@ -19,7 +19,6 @@ $this->registerModule(
     '2.0.1',
     [
         'requires' => [['core', '2.24']],
-        'standalone_config' => true,
         'type'     => 'theme',
         'tplset'   => 'mustek',
     ]
