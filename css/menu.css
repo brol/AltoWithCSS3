@@ -43,7 +43,6 @@
 	position:absolute;
 	left:0;
 	-webkit-border-radius: 0 0 10px 10px;
-  -moz-border-radius: 0 0 10px 10px;
   border-radius: 0 0 10px 10px;
 }
 #nav ul li ul ul {
@@ -64,7 +63,6 @@
   float: left;
   margin-right: 10px;
 	-webkit-border-radius: 10px 10px 0 0;
-  -moz-border-radius: 10px 10px 0 0;
   border-radius: 10px 10px 0 0;
   display: block;
   height: 26px;
@@ -104,7 +102,6 @@
   text-decoration: none;
 	background-color:#bfbfbf;
 	-webkit-border-radius: 10px 10px 0 0;
-  -moz-border-radius: 10px 10px 0 0;
   border-radius: 10px 10px 0 0;
 }
 
@@ -142,7 +139,6 @@
   text-decoration: none;
 	background:none;
 	-webkit-border-radius: 10px 10px 0 0;
-  -moz-border-radius: 10px 10px 0 0;
   border-radius: 10px 10px 0 0;
 }
 #nav ul li li {
