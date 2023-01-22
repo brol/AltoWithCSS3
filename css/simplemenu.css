@@ -30,11 +30,9 @@
   text-transform: lowercase;
   font-size: 10pt;
   text-decoration: none;
-	float: left;
-	margin-right:10px;
-	background-color:#9999CC;
-	-webkit-border-radius: 10px 10px 0 0;
-  -moz-border-radius: 10px 10px 0 0;
+  float: left;
+  margin-right:10px;
+  background-color:#9999CC;
   border-radius: 10px 10px 0 0;
 }
 * html #navsm li { /* Filter for IE6 to prevent li stacking */
@@ -56,18 +54,14 @@
   text-decoration: none;
 }
 #supranav li.active {
-	background-color:#bfbfbf;
-	-webkit-border-radius: 10px 10px 0 0;
-  -moz-border-radius: 10px 10px 0 0;
+  background-color:#bfbfbf;
   border-radius: 10px 10px 0 0;
 }
 #supranav li.active a {
 }
 #supranav li:hover {
   text-decoration: none;
-	background-color:#bfbfbf;
-	-webkit-border-radius: 10px 10px 0 0;
-  -moz-border-radius: 10px 10px 0 0;
+  background-color:#bfbfbf;
   border-radius: 10px 10px 0 0;
 }
 #supranav li a:hover {
