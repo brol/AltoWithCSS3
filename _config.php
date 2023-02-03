@@ -82,7 +82,7 @@ echo
 '<p class="field"><label>' . __('Menu to display:') . '</label>' .
 form::combo('altowithcss3_menu', $altowithcss3_menu_combo, $my_menu) .
 '</p>' .
-'<p class="info">' . __('Plugins menu allowed: <a href="http://plugins.dotaddict.org/dc2/details/menu">Menu</a> plugin or simpleMenu.') . '</p>';
+'<p class="info">' . __('Plugins menu allowed: <a href="https://plugins.dotaddict.org/dc2/details/menu">Menu</a> plugin or simpleMenu.') . '</p>';
 
 # Width type
 echo

@@ -1,35 +1,52 @@
+# Language: Español
+# Module: AltoWithCSS3 - 2.0.3
+# Date: 2023-02-03 10:31:14
+# Author: Pierre Van Glabeke
+# Translated with translater 2022.12.26
+
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Project-Id-Version: AltoWithCSS3 2.0.3\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: \n"
-"Last-Translator: brol <contact@brol.info>\n"
+"PO-Revision-Date: 2023-02-03T10:31:14+00:00\n"
+"Last-Translator: Pierre Van Glabeke\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=iso-8859-1\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.5.7\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-msgid "Customizations"
-msgstr "Personalizaciones"
-
-msgid "Menu to display:"
-msgstr "Menú para mostrar:"
-
-msgid "none"
-msgstr "no cualquiera"
-
+#: _config.php:32
 msgid "Menu"
 msgstr "Menú"
 
-msgid "Plugins menu allowed: <a href="http://plugins.dotaddict.org/dc2/details/menu">Menu</a> plugin or simpleMenu."
-msgstr "Menú Plugins permitidos: <a href="http://plugins.dotaddict.org/dc2/details/menu">Menú</a> o SimpleMenu."
+#: _config.php:33
+msgid "none"
+msgstr "no cualquiera"
 
+#: _config.php:81
+msgid "Customizations"
+msgstr "Personalizaciones"
+
+#: _config.php:82
+msgid "Menu to display:"
+msgstr "Menú para mostrar:"
+
+#: _config.php:85
+msgid "Plugins menu allowed: <a href=\"https://plugins.dotaddict.org/dc2/details/menu\">Menu</a> plugin or simpleMenu."
+msgstr "Menú Plugins permitidos: <a href=\"https://plugins.dotaddict.org/dc2/details/menu\">Menú</a> o SimpleMenu."
+
+#: _config.php:89
 msgid "Display width:"
 msgstr "Mostrar Anchura:"
 
+#: tpl/_footer.html:2
+#: tpl/page.html:15
+#: tpl/post.html:131
 msgid "by"
 msgstr "por"
 
+#: tpl/_footer.html:2
 msgid "DC2 theme by"
 msgstr "DC2 tema por"
+

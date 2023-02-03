@@ -1,5 +1,6 @@
-v2.0.3 - 22/01/2023 Pierre Van Glabeke
+v2.0.3 - 03/02/2023 Pierre Van Glabeke
 * modifs css
+* localisation
 
 v2.0.2 - 11/01/2023 Pierre Van Glabeke
 * modifs css
