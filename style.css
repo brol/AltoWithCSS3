@@ -154,7 +154,7 @@ code {
 }
 
 a.feed {
-  background: transparent url("img/rss.png") no-repeat scroll 0 50%;
+  background: transparent url(img/rss.png) no-repeat scroll 0 50%;
   padding: 5px 0 5px 22px;
 }
 /*input { text-transform: lowercase; }*/
